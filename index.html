@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Examen PT Niveau 2 — Spécifique</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="header-inner">
+<h1>Examen PT Niveau 2 — Spécifique</h1>
+<div class="sub">QCM interactif • 4 choix • 1 point par question • correction automatique</div>
+<div class="progress"><div id="bar"></div></div>
+<div id="counter" style="margin-top:8px;font-size:14px">0 / TOTAL répondues</div>
+</div></header>
+<main>
+<div class="note">Ce fichier a été construit à partir du PDF scanné fourni. La qualité de certaines zones du scan/OCR est imparfaite ; le texte a été conservé au plus près du document. Chaque bonne réponse vaut <strong>1 point</strong>.</div>
+<div id="quiz"></div>
+<div id="result">
+<h2>Résultat</h2><div class="score" id="score"></div><div id="percent"></div><div id="status"></div>
+<div class="review" id="review"></div>
+<button onclick="window.scrollTo({top:0,behavior:'smooth'})">Revoir les questions</button>
+<button class="secondary" onclick="resetQuiz()">Recommencer</button>
+</div></main>
+<div class="actions"><button onclick="calculate()">✓ Corriger l'examen</button><button class="secondary" onclick="resetQuiz()">↻ Réinitialiser</button></div>
+<script src="script.js"></script></body></html>
